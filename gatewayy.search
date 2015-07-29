@@ -1,0 +1,2 @@
+source=/usr/local/httpd/logs/tosune5_ssl_access* host=tosune5 "GET 200 - /pdm_gateway/search " NOT doc NOT jsessionid NOT keyword NOT parts
+| timechart span=1mon count

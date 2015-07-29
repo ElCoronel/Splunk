@@ -1,0 +1,2 @@
+source=/usr/local/httpd/logs/tosune5_ssl_access* host=tosune5
+| stats count as hit by date_hour, date_mday | chart avg(hit) by date_hour

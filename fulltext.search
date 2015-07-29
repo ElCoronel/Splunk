@@ -1,0 +1,2 @@
+source=/usr/local/httpd/logs/tosune5_ssl_access* host=tosune5 "GET 200 - /pdm_gateway/search/keyword/fulltextsearch" OR "GET 200 - /pdm_gateway/search/keyword/tofulltextsearch"
+| timechart span=1mon count
